@@ -19,9 +19,9 @@ public class Weatherreporterkumar {
         System.out.println("Please Enter the City you want: ");
         String city = scanner.nextLine();
         System.out.println("Getting Weather report for " + city);
-        String keyAPI = "e408964eb2206f1573c77832841e6b11";
+        String keyAPI = "Code api";
 
-        URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=e408964eb2206f1573c77832841e6b11");
+        URL url = new URL("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=code");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
 
